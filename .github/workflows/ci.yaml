@@ -95,7 +95,7 @@ jobs:
       # Deploy with Helm
       - name: Deploy Helm chart
         run: |
-          helm upgrade --install go-web-app ./helm-chart \
+          helm upgrade --install go-web-app ./helm/go-web-app-chart \
             --set image.repository=${{ secrets.DOCKER_USERNAME }}/go-web-app \
             --set image.tag=v2 \
             --namespace default \

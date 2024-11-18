@@ -86,7 +86,7 @@ jobs:
 
       - name: Update kubeconfig for EKS
         run: |
-          aws eks update-kubeconfig --name my-cluster --region us-east-1
+          aws eks update-kubeconfig --name demo-cluster --region us-east-1
 
       # Install Helm
       - name: Install Helm
